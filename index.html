@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<title>Customer Satisfaction Survey</title>
+
+  <link rel="stylesheet" href="styles.css"/>
+
+  <h1 id="title">Customer Satisfaction Survey</h1>
+
+  <p id="description">Tell us how we did and enter for a chance to win a $500 Amazon gift card!</p>
+
+  <form id="survey-form">
+
+    <fieldset>
+
+      <div>
+      <label for="name-label" id="name-label">Name<input type="text" id="name" "placeholder="Enter your name" min="5" max="20" required placeholder="Enter your name"/></label>
+      </div>
+
+      <div>
+      <label for"email-label" id="email-label">Email<input type="email" id="email" required placeholder="Enter your Email"></label>
+      </div>
+
+      <div>
+      <label for="age" id="number-label">Age (optional)<input type="number" id="number" min="16" max="120" placeholder="Age"></label>
+      </div>
+
+      <div>
+      <label for="rating">How did we do?</label>
+        <select id="dropdown" name="rating" >
+          <option value="">(select one)</option>
+          <option value="1">Excellent</option>
+          <option value="2">Great</option>
+          <option value="3">Good</option>
+          <option value="4">Okay</option>
+          <option value="5">Bad</option>
+          <option value="6">Very Bad</option>
+        </select>
+      </div>
+
+      <div>
+<label for="suggestions">What would you like to see improved?</label>
+      </div>
+
+    <div>
+      <input type="checkbox" id="more-brands" name="suggestions" value="suggestions">
+      <label for="suggestions">More Brands</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="exclusive-offers" name="suggestions" value="suggestions">
+      <label for="suggestions">Exclusive Offers</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="online-delivery" name="suggestions" value="suggestions">
+      <label for="suggestions">Online Delivery</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="self-serve-checkout" name="suggestions" value="suggestions">
+      <label for="suggestions">Self-Serve Checkout</label>
+    </div>
+
+    <div>
+    <label for="why">Tell us why
+      <textarea id="why" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+    </label>
+    </div>
+
+    <div>
+    <label for="referral">Would you recommend us to friends and family?</label>
+    </div>
+
+    <input id="yes" name="referral" type="radio" required value="referral"/>
+    <label for="yes">Yes</label>
+
+    <input id="no" name="referral" type="radio" required value="referral"/>
+    <label for="no">No</label>
+
+    <div>
+      <p id="shopping-purpose">Do you shop for</p>
+      <label><input name="shopping-purpose" id="shopping-purpose" value="radio" type="radio"/>Personal</label>
+      <label><input name="shopping-purpose" id="shopping-purpose" value="radio" type="radio"/>Business</label>
+    </div>
+
+
+
+    </fieldset>
+
+    <input id="submit" type="submit" value="Submit"/>
+  </form>
+
+
+</html>
